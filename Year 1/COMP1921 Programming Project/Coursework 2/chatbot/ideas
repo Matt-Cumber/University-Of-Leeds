@@ -1,0 +1,203 @@
+
+------3. Are you a computer?------
+
+------9. Do you like school?------
+------10. Do you like dancing?------
+11. What day is it today?
+12. What time is it?
+
+------16. Do you like to read books?------
+
+17. What food do you like to eat?
+
+
+focus on user
+
+ask questions
+  what is your age?
+    do you like school?
+    do you have a job?
+    what do you do?
+    do you like your job?
+  do you have any siblings?
+    how old are they?
+
+
+
+likes
+  sports
+    dancing
+    boxing
+    squash
+    football
+  food
+    pizza
+    burgers
+    chips
+    chocolate
+  drink
+    coke
+    lemonade
+    water
+    milk
+  misc
+    school
+    job
+
+
+faves
+  food
+  drink
+  sport
+  book
+  song
+  film
+  colour
+  band
+
+have
+  brother
+  sister
+  mother
+  niece
+  nephew
+  aunt
+  uncle
+  grandmother
+  grandfather
+  exam
+
+went
+  shopping
+
+going
+
+
+key words for phrases:
+what
+  what is your fave ...
+  what is my fave ...
+  what do i like
+  what do you think of
+how
+  how are you
+do
+  do i like ...
+  do you like ...
+went
+  went to ...
+  went to the ...
+going
+  going on ...
+  going to ...
+  going to the ...
+
+i
+  i like
+  i dont like
+  i am a ...
+  i have
+you
+  suck
+  rock
+  you are
+    rubbish
+    boring
+    awesome
+    bad
+    amazing
+
+  you have
+
+are
+  you funny
+
+do you want to play a game
+  hide and seek
+  5 turns
+
+
+
+
+while LOOP
+  concat each word
+  try hash the words together
+  move on
+
+
+
+
+  /*---ADD HASH KEY AND DATA PAIRS---*/
+  insert_into_hashtable(hashtable,"hello","Hello");
+  insert_into_hashtable(hashtable,"cats","I hate cats");
+  insert_into_hashtable(hashtable,"dogs","I love dogs");
+  insert_into_hashtable(hashtable,"pets","I have no pets");
+  insert_into_hashtable(hashtable,"cars","I like cars");
+  insert_into_hashtable(hashtable,"books","I like to read");
+  insert_into_hashtable(hashtable,"cat","I hate cats");
+  insert_into_hashtable(hashtable,"dog","I love dogs");
+  insert_into_hashtable(hashtable,"pet","I have no pets");
+  insert_into_hashtable(hashtable,"car","I like cars");
+  insert_into_hashtable(hashtable,"book","I like to read");
+  insert_into_hashtable(hashtable,"football","I hate football");
+  insert_into_hashtable(hashtable,"racing","I like racing");
+  insert_into_hashtable(hashtable,"rally","I love rally");
+  insert_into_hashtable(hashtable,"boxing","I like boxing");
+
+  /*---ADD I AM REPLIES--*/
+  insert_into_hashtable(hashtable,"iam*good","That is good to hear");
+  insert_into_hashtable(hashtable,"iam*great","That is excellent news");
+  insert_into_hashtable(hashtable,"iam*happy","Good");
+  insert_into_hashtable(hashtable,"iam*unhappy","Oh no, What's wrong?");
+  insert_into_hashtable(hashtable,"iam*bad","I'm sure your'e good in some ways");
+  insert_into_hashtable(hashtable,"iam*okay","That's okay then");
+  insert_into_hashtable(hashtable,"iam*sad","Don't be sad I am your friend and here for you");
+  insert_into_hashtable(hashtable,"iam*upset","What is upsetting you?");
+
+  /*---ADD FAVOURITES---*/
+  insert_into_hashtable(hashtable,"favourite*sport","Boxing");
+  insert_into_hashtable(hashtable,"favourite*motorsport","Rally");
+  insert_into_hashtable(hashtable,"favourite*animal","Dogs");
+  insert_into_hashtable(hashtable,"favourite*food","Burgers");
+  insert_into_hashtable(hashtable,"favourite*drink","Lemonade");
+  insert_into_hashtable(hashtable,"favourite*dessert","Lemon cheese cake");
+  insert_into_hashtable(hashtable,"favourite*restaurant","Byron's Burgers");
+  insert_into_hashtable(hashtable,"favourite*meal","Chicken and Pasta bake");
+  insert_into_hashtable(hashtable,"favourite*colour","White");
+  insert_into_hashtable(hashtable,"favourite*car","the Audi RS5 Coupe");
+  insert_into_hashtable(hashtable,"favourite*film","Saving Private Ryan");
+  insert_into_hashtable(hashtable,"favourite*actor","Tom Hanks");
+  insert_into_hashtable(hashtable,"favourite*book","FEED by Mira Grant");
+  insert_into_hashtable(hashtable,"favourite*song","Grateful by Neffex");
+  insert_into_hashtable(hashtable,"favourite*game","Wolfenstein");
+  insert_into_hashtable(hashtable,"favourite*season","Spring");
+
+  /*---ADD WENT PLACES---*/
+  insert_into_hashtable(hashtable,"went*shopping","What did you buy?");
+  insert_into_hashtable(hashtable,"went*driving","Was it fun? What car did you drive?");
+  insert_into_hashtable(hashtable,"went*climbing","Were you safe? How high did you go?");
+  insert_into_hashtable(hashtable,"went*skiing","Was it cold? Where did you ski?");
+  insert_into_hashtable(hashtable,"went*snowboarding","Was it cold? Where did you snowboard?");
+  insert_into_hashtable(hashtable,"went*holiday","How long for? Where did you go?");
+
+
+  who
+  why
+  went
+  going
+
+
+
+
+feeling good
+doing well
+
+
+
+
+
+
+
+i like cheese on toast   ilike*cheeseontoast true
+i do not like cheese     ilike*cheese false
+do i like cheese on toast?    ilike*
