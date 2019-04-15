@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	<h1>Your Profile</h1>
+	<hr>
+    <h3>{{ profile.pr_id.email }}</h3>
+    <form method="POST" action="" name="update_profile">
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.tiredness.label() }}
+                {% if form.tiredness.errors %}
+                    {{ form.tiredness() }}
+                    <div>
+                        {% for error in form.tiredness.errors %}
+                            <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.tiredness() }}
+                {% endif %}
+            </p>
+            <p>
+                {{ form.stress.label() }}
+                {% if form.stress.errors %}
+                    {{ form.stress() }}
+                    <div>
+                        {% for error in form.stress.errors %}
+                            <span style="color: red;">{{ error }}</span>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    {{ form.stress() }}
+                {% endif %}
+            </p>
+            <div>
+                {{ form.submit() }}
+            </div>
+        </form>
+{% endblock content %}
