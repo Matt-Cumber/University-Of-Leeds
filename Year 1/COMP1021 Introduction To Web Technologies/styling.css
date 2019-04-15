@@ -1,0 +1,884 @@
+/*--Defualt Styling--*/
+
+html, body {
+    height: 100%;
+    font-family: verdana;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    width: 95%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav {
+    background-color: black;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    color: #CACACA;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+nav a:hover:not(.activepage) {
+    color: white;
+}
+
+.activepage {
+    color: white;
+}
+
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+/*--Welcome Styling--*/
+.introductorytext p {
+    color: #797A79;
+    margin: 0px 64px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.introductorytext p:hover {
+    color: black;
+}
+
+
+
+/*--About Styling--*/
+.aboutnav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.aboutnav ul {
+    float: left;
+    list-style-type: none;
+    padding: 16px;
+    
+}
+
+.aboutnav li {
+    padding-bottom:8px;
+    padding-right: 8px;
+}
+
+.aboutnav a {
+    color: #797A79;
+    text-decoration: none;
+    -webkit-transition: color 1.2s, text-decoration 1.2s;
+    transition: color 1.2s, text-decoration 1.2s;
+}
+
+.aboutnav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.aboutcontent {
+    margin-bottom: 24px;
+}
+
+
+
+/*--Me Styling--*/
+#me {
+    padding-bottom: 16px;
+}
+
+#me .metext {
+    margin-right: 64px;
+}
+
+#me .metext h2 {
+    text-align: center;
+}
+
+#me .metext p {
+    color: #797A79;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+    padding-bottom: 24px;
+}
+
+#me .metext p:hover {
+    color: black;
+}
+
+
+#me img {
+    float: left;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+    -webkit-transition: transform 1.2s, box-shadow 1.2s;
+    transition: transform 1.2s, box-shadow 1.2s;
+}
+
+#me img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 6px 4px #C0C1C0;
+}
+
+
+
+/*--Family Styling--*/
+#family {
+    padding-bottom: 16px;
+}
+
+#family .familytext {
+    margin-right: 9%;
+    margin-left: 7%;
+}
+
+#family .familytext h2 {
+    text-align: center;
+}
+
+#family .familytext p {
+    color: #797A79;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+    padding-bottom: 24px;
+}
+
+#family .familytext p:hover {
+    color: black;
+}
+
+
+
+/*--Hobbies Styling--*/
+#hobbies {
+    padding-bottom: 16px;
+}
+
+#hobbies .hobbiestext {
+    margin-right: 9%;
+    margin-left: 7%;
+}
+
+#hobbies .hobbiestext h2 {
+    text-align: center;
+}
+
+#hobbies .hobbiestext p {
+    color: #797A79;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+    padding-bottom: 24px;
+}
+
+#hobbies .hobbiestext p:hover {
+    color: black;
+}
+
+#hobbies iframe {
+    width: 560px;
+    height: 315px;
+    margin-left: 15%;
+    padding-bottom: 24px;
+}
+
+
+
+/*--Pets Styling--*/
+#pets {
+    margin-left: 7%;
+    margin-right: 9%;
+}
+
+#pets .petstext1 {
+    width: 70%;
+}
+
+#pets .petstext1 h2 {
+    text-align: center;
+}
+
+#pets p {
+    float: left;color: #797A79;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+#pets p:hover {
+    color: black;
+}
+
+#pets .chewyyoung img {
+    float: left;
+    margin-left: 8%;
+    margin-bottom: 8%;
+    width: 20%;
+    border: 1px solid black;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity 1.2s, filter 1.2s;
+    transition: opacity 1.2s, filter 1.2s;
+}
+
+#pets .chewyyoung img:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+#pets .chewyopp img {
+    float: left;
+    width: 20%;
+    margin-bottom: 8%;
+    border: 1px solid black;
+    margin-bottom: 8%;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity 1.2s, filter 1.2s;
+    transition: opacity 1.2s, filter 1.2s;
+}
+
+#pets .chewyopp img:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);    
+}
+
+#pets .petstext2 {
+    float: left;
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 64px;
+    margin-bottom: 10%;
+}
+
+
+
+/*--Geneva Styling--*/
+.genevacontent {
+    float: left;
+    padding-bottom: 24px;
+}
+
+.whatisgeneva {
+    margin-left: 64px;
+    width: 40%;
+}
+
+.whatisgeneva h2 {
+    text-align: center;
+}
+
+.whatisgeneva p {
+    color: #797A79;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.whatisgeneva p:hover {
+    color: black;
+}
+
+.whygeneva {
+    float: right;
+    margin-right: 64px;
+    width: 40%;
+}
+
+.whygeneva h2 {
+    text-align: center;
+}
+
+.whygeneva p {
+    color: #797A79;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.whygeneva p:hover {
+    color: black;
+}
+
+.cerntunnel {
+    margin-left: 100px;
+    width: 20%;
+    border: 1px solid black;
+    padding-bottom: 0px;
+    margin-right: 10%;
+    margin-bottom: 24px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity 1.2s, filter 1.2s;
+    transition: opacity 1.2s, filter 1.2s;
+}
+
+.cerntunnel:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.cerntunneltext {
+    width: 52%;
+}
+
+.cerntunneltext h2 {
+    text-align: center;
+}
+
+.cerntunneltext p {
+    color: #797A79;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.cerntunneltext p:hover {
+    color: black;
+}
+
+.unexpectedturntext {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.unexpectedturntext h2 {
+    text-align: center;
+}
+
+.unexpectedturntext p {
+    color: #797A79;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.unexpectedturntext p:hover {
+    color: black;
+}
+
+.genevacontent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.genevaimages {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.genevaimages img {
+    float: left;
+    border: 1px solid black;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity 1.2s, filter 1.2s;
+    transition: opacity 1.2s, filter 1.2s;
+}
+
+.genevaimages img:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.vertical img {
+    width: 10.85%;
+}
+
+.horizontal img {
+    width: 19.25%;
+}
+
+
+/*--My Girlfriend Styling--*/
+
+.mygirlfriendcontent {
+    float: left;
+    padding-bottom: 24px;
+}
+
+.meetinglucy {
+    margin-left: 64px;
+    width: 40%; 
+}
+
+.meetinglucy h2 {
+    text-align: center;
+}
+
+.meetinglucy p {
+    color: #797A79;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.meetinglucy p:hover {
+    color: black;
+}
+
+.datinglucy {
+    float: right;
+    margin-right: 64px;
+    width: 40%;
+}
+
+.datinglucy h2 {
+    text-align: center;
+}
+
+.datinglucy p {
+    color: #797A79;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.datinglucy p:hover {
+    color: black;
+}
+
+.mygirlfriendcontent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imagegallery {
+    float: left;
+    margin-left: 31%;
+    margin-right: 31%;
+}
+.imagegallery:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.imagegallery2 {
+    float: left;
+    margin-left: 37%;
+    padding-bottom: 24px;
+}
+
+.polaroid {
+    width: 129px;
+    float: left;
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    background-color: white;
+    -webkit-transition: transform 1.2s, box-shadow 1.2s;
+    transition: transform 1.2s, box-shadow 1.2s;
+}
+
+.polaroid:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 6px 4px #C0C1C0;
+}
+
+.polaroid img {
+    width: 129px;
+    height: 150px;
+    border: 1px solid #ccc;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.polaroid:hover img {
+    border-color: black;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.polaroiddescription {
+    padding: 4px;
+    text-align: center;
+    color: #797A79;
+    font-size: 10px;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.polaroid:hover .polaroiddescription {
+    color: black;
+}
+
+
+
+
+/*--University Styling--*/
+.unicontent {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.unicontent h2 {
+    text-align: center;
+}
+
+.unicontent p {    
+    color: #797A79;
+    text-align: justify;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+    padding-bottom: 24px;
+}
+
+.unicontent p:hover {
+    color: black;
+}
+
+.gradestable {
+    width: 40%;
+    float: left;
+    overflow-x: auto;
+}
+
+table {
+    margin-right: 8%;
+    border: 1px solid black;
+    width: 30%;
+    font-family: verdana;
+    text-align: left;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    -webkit-transition: opacity 1.2s, filter 1.2s;
+    transition: opacity 1.2s, filter 1.2s;
+}
+
+table:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+}  
+
+
+table caption {
+    padding-bottom: 5px;
+}
+
+tbody {
+    color: #797A79;
+}
+
+tbody tr {
+   -webkit-transition: color 1.2s;
+    transition: color 1.2s;   
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+tbody tr:hover {
+    color: black;
+}
+
+tr:nth-child(even) {
+    background-color: #EEEEEE;
+}
+
+.grade {
+    font-weight: bold;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+
+
+/*--Footer Styling--*/
+
+.pagecontent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+    background-color: #F9F9F9;
+    margin-top: 32px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.footer h2 {
+    font-size: 17px;
+}
+
+.number {
+    color: #CACACA;
+    font-size: 13px;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.number:hover {
+    color: black;
+}
+
+.footer a {
+    color: #CACACA;
+    font-size: 13px;
+    text-decoration: none;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+.footer a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.footercontent:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    float: left;
+}
+
+.socialmedia {
+    width: 38%;
+    margin-left: 64px;
+}
+
+.contact {
+    width: 41%;
+}
+
+.navigation {
+    width: 15%;
+}
+
+.facebook {
+    width: 19px;
+    float: left;
+    padding-right: 16px;
+}
+
+.snapchat {
+    width: 19px;
+    float: left;
+    padding-right: 18px;
+}
+
+.instagram {
+    width: 19px;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---Coursework2---*/
+
+
+/*---BUTTON STYLES---*/
+button {
+    width: 15%;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: white;
+    color: #CACACA;
+    -webkit-transition: color 1.2s;
+    transition: color 1.2s;
+}
+
+button:hover {
+    color: black;
+}
+
+button:active {
+    text-decoration: underline;
+}
+
+
+/*---DATE---*/
+#Date {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+#Icon:hover {
+    color: white;
+}
+
+
+/*---SLIDE SHOW---*/
+.slideshow img {
+    width: 40%;
+    opacity: 1;
+    border: 1px solid black;
+    margin-left: 30%;
+}
+
+.slideshowbuttons {
+    margin-left: 42%;
+}
+
+
+/*---VIDEO---*/
+.video {
+    margin-left: 24%;
+}
+
+video {
+    width: 70%;
+    border: 1px solid black;
+}
+
+.videobutton button {
+    width: 25%;
+    margin-left: 20%;
+}
+
+
+/*---MAPS---*/
+#googleMap {
+    margin-left: 64px;
+    margin-right: -64px;
+}
+
+.mapbuttons button {
+    width: 25%;
+    float: none;
+}
+
+.mapbuttons {
+    margin-left: 33%;
+}
+
+
+/*---SCROLL METER---*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #DEDEDE; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6B6F6F; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: black; 
+}
+
+.ScrollMeter {
+    position: fixed;
+    bottom: 0;
+    margin-left: -8px;
+    z-index: 1;
+    width: 100%;
+    height: 12px;
+    background: #CACACA;
+}
+
+.scrollmeter {
+    height: 12px;
+    background: black;
+    width: 0%;
+}
+
+
+/*---RESPONSIVE NAV---*/
+@media screen and (max-width: 770px) {
+  .nav a:not(.activepage) { display: none; }
+  .nav a.arrow {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .nav.responsive { position: relative; }
+  .nav.responsive a.arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    
+    #Date {
+        position: absolute;
+        right: 36px;
+        padding: 14px 16px;
+    }
+}
+
+.nav .arrow {
+    display: none;
+}
+
+#Arrow {
+    color: #CACACA;
+}

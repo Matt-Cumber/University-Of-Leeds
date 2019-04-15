@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styling.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <base target="_self" />
+        <title>GENEVA</title>
+    </head>
+    
+    <body>
+        <nav class="nav" id="navbar">
+            <a href="welcome.html">WELCOME</a>
+            <a href="about.html">ABOUT</a>
+            <a class="activepage" href="geneva.html">GENEVA</a>
+            <a href="mygirlfriend.html">MY GIRLFRIEND</a>
+            <a href="university.html">UNIVERSITY</a>
+            
+            <a id="Arrow" href="javascript:void(0);" class="arrow" onclick="navBar()">&#9660;</a>
+            
+            <a id="Date"></a>
+        </nav>
+        
+        <script src="javascript/generalScript.js"></script>
+        
+        <header>
+            <h1>GENEVA</h1>
+        </header>
+            
+            
+        <hr />
+            
+        <div class="pagecontent">
+               
+        <div class="genevacontent whatisgeneva">
+            <h2>What Is Geneva?</h2>
+            <p>Geneva is a beautiful city located in Switzerland. The city is home to many great tourist attractions such as Lake Geneva, a United Nations building, The Jet and many more. French is the language spoken by most of it's population as the city is so close to the border of France. </p>            
+        </div>
+            
+        <div class="genevacontent whygeneva">
+            <h2>Why Geneva?</h2>
+            <p>On the 15<sup>th</sup> of July 2016 I went to visit Geneva on school trip as one of the students at my sixth form who took A Level Physics. The trip was intended on lasting over the weekend returning on the 17<sup>th</sup> but things didn't work out as first planned.</p>
+        </div>
+            
+        <img class=" genevacontent cerntunnel" src="images/cerntunnel.jpg" alt="Image of the tunnel at CERN">
+            
+        <div class="genevacontent cerntunneltext">
+            <h2>Purpose Of The Trip</h2>
+            <p>I had been studying particle physics as part of my A Level learning about what makes up a particle and how they are formed or destroyed, then my teacher brought up he had always wanted to see the Large Hadron Collider at CERN which is in Geneva. We eventually persuaded him to take the whole class on an educational trip about the Annhilation of particles and see real-world research taking place, and of course get a nice holiday out of it. We visited CERN on the first full day of our trip and had a tour around the facilities which lasted a couple of hours. The image on the left is a photograph which I took of the Large Hadron Collider which is essentially a large circle tunnel underground that accelerates particles and eventually causes them to collide into each other in the hopes of discovering new particles.</p>
+        </div>
+            
+        <div class="genevacontent unexpectedturntext">
+            <h2>Unexpected Turn</h2>
+            <p>We were due to fly back on the on Sunday the 17<sup>th</sup> of July, however our flight was cancelled. This was due to an emergency landed of Boris Johnsons flight at the Airport we were due to land in. As a result, the trip was extended a further two days and we were accomodated into a luxurious 4 and a half star hotel as this was the only hotel nearby with enough rooms available for everyone. Since the trip was not planned to last for an additional two days we were free to do whatever we liked. The original flight was an evening flight so I spent the the day on Sunday exploring the city visiting The Jet, the United Nations building, going into local shops and talking to the people of Geneva. So, on the monday I spent the day swimming in Lake Geneva which was extraordinary. The water is extremely clear and there are little features that have been included in a seperate area such as a climbing wall in the middle of the water and a diving board. I spent Monday evening at a lakeside bar which had a beautiful view of The Jet and the lights of the city across the lake. I had pizza and beer with my friends and teachers as we watched the sunset over Lake Geneva. The following day a group of us went to visit the Patek Philippe Museum which had some of the worlds most amazing watches to show. </p>
+        </div>    
+            
+        
+        <div class="genevacontent slideshow">
+            <img class="slides" src="images/unitednationsbuilding.jpg" alt="United Nations Building">
+            <img class="slides" src="images/viewoverbridge.jpg" alt="View Over Brigde">
+            <img class="slides" src="images/thejet.jpg" alt="The Jet">
+            <img class="slides" src="images/viewfromcern.jpg" alt="View From Cern">
+            
+            <script src="javascript/slideshow.js"></script>
+            
+            <div class="slideshowbuttons">
+                <button onclick="changeIndex(-1)">Previous</button>
+                <button onclick="changeIndex(1)">Next</button>
+            </div>    
+        </div>
+            
+        <br />    
+            
+        <div class="genevacontent video">
+            <video id="video" muted>
+                <source src="videos/IMG_1833.mp4" type="video/mp4">
+                <source src="videos/IMG_1833.webm" type="video/webm">
+                <source src="videos/IMG_1833.ogg" type="video/ogg">
+                <source src="videos/IMG_1833.mv4" type="video/mv4">
+            </video> 
+            
+            <script src="javascript/video.js"></script>
+            
+            <div class="videobutton">
+                <button onclick="videoControl()">Play / Pause</button>
+            </div> 
+        </div>    
+            
+        <br />
+            
+            <div id="googleMap" style="width:90%;height:400px;"></div>
+            
+            <script>
+    
+                var map;
+                
+                function getUserLocation() {
+                       if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(getUserLatLon);
+                    } else {
+                        alert("Geolocation not available");
+                    }
+                }
+
+                function getUserLatLon(position) {
+                    var lat = position.coords.latitude;
+                    var lon = position.coords.longitude;
+                    initMap(lat,lon);
+                }    
+
+                function initMap(lat, lon) {
+
+                    var y = document.getElementById("googleMap");
+                    
+                    y.style.border = "1px solid black";
+                    
+                    var userLocation = new google.maps.LatLng(lat,lon);
+
+                    var mapCanvas = document.getElementById("googleMap");
+
+                    var mapOptions = {center: userLocation, zoom: 4, disableDefaultUI: true};
+
+                    map = new google.maps.Map(mapCanvas, mapOptions);
+
+                    var markerOne = new google.maps.Marker({position: userLocation});
+                        markerOne.setMap(map);
+
+                    var geneva = new google.maps.LatLng(46.204391,6.143158);
+                    var markerTwo = new google.maps.Marker({position: geneva});
+                        markerTwo.setMap(map);
+
+                    var infowindowOne = new google.maps.InfoWindow({
+                        content:"You are here"
+                    });
+
+                    var infowindowTwo = new google.maps.InfoWindow({
+                        content:"This is Geneva"
+                    });
+
+                    google.maps.event.addListener(markerOne, 'click', function() {
+                        infowindowOne.open(map,markerOne);  
+                        var pos = map.getZoom();
+                        map.setZoom(9);
+                        map.setCenter(userLocation);
+                        window.setTimeout(function() {map.setZoom(pos);},4000);
+                    });
+
+                    google.maps.event.addListener(markerTwo, 'click', function() {
+                        infowindowTwo.open(map,markerTwo);  
+                        var pos = map.getZoom();
+                        map.setZoom(9);
+                        map.setCenter(geneva);
+                        window.setTimeout(function() {map.setZoom(pos);},4000);
+                    });
+                }
+
+                function changeMapSat(map) {
+                    map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+                }
+
+                function changeMapTerrain(map) {
+                    map.setMapTypeId(google.maps.MapTypeId.TERRAIN);
+                }
+
+                function changeMapRoad(map) {
+                    map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+                }
+
+                function changeZoom(map,x) {
+                    var newZoom = map.getZoom() + x;
+                    map.setZoom(newZoom);
+                }  
+
+            </script>
+
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCONbSV8XhCAfXGmHDv91TIoQ7PJlCttlA&callback=getUserLocation"
+            type="text/javascript"></script> 
+            
+            <div class="genevacontent mapbuttons">
+                <button onclick="changeMapRoad(map)">Road Map View</button>
+                <button onclick="changeMapTerrain(map)">Terrain View</button>
+                <button onclick="changeMapSat(map)">Satellite View</button>
+                <button onclick="changeZoom(map,1)">Zoom In</button>
+                <button onclick="changeZoom(map,-1)">Zoom Out</button>
+            </div>
+            
+        <div class="ScrollMeter">
+            <div class="scrollmeter" id="Meter"></div>
+        </div> 
+            
+        </div>
+        
+        <hr />
+        
+        
+        <footer class="footer">
+            <div class="footercontent">
+            <div class="content socialmedia">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com/profile.php?id=100008929025551" target="_blank" title="Facebook"><img class="facebook" src="images/facebookblack.png" alt="Facebook logo" /></a>
+                <a href="https://www.snapchat.com/add/matty_cucumber" target="_blank" title="Snapchat"><img class="snapchat" src="images/snapchatblack.png" alt="Snapchat logo" /></a>
+                <a href="https://www.instagram.com/lucyy__barnes/" target="_blank" title="Instagram"><img class="instagram" src="images/instagramblack.png" alt="Instagram logo" /></a>
+            </div>
+            
+            
+            <div class="content contact">
+                <h2>Contact</h2>
+                <span class="number">(+44) 1111 111 111 </span> <br />
+                <a href="mailto:ll16m23c@leeds.ac.uk">ll16m23c@leeds.ac.uk</a>
+            </div>
+                
+            <div class="content navigation">
+                <h2>Navigation</h2>
+                <p>
+                    <a href="welcome.html">WELCOME ></a> <br />
+                    <a href="about.html">ABOUT ></a> <br />
+                    <a href="geneva.html">GENEVA ></a> <br />
+                    <a href="mygirlfriend.html">MY GIRLFRIEND ></a> <br />
+                    <a href="university.html">UNIVERSITY ></a> <br />
+                </p>            
+            </div>
+                
+            </div>
+            
+        </footer>
+        
+    </body>
+
+</html>
