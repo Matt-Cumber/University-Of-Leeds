@@ -1,0 +1,21 @@
+// Tester file
+    class test {
+        
+
+        field int a, b, c, d;
+        static int x, y;
+
+        constructor test new(int a1, int b1, int c1, int d1)
+        {
+            return this;
+        }
+
+        function void testme()
+        {
+            do Output.printString("keyPressed test:");
+            do Output.println();
+            return 0;
+        }
+
+    }
+       

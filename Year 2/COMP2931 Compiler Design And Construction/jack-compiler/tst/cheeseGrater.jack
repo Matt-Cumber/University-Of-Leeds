@@ -1,0 +1,27 @@
+/** Matt's cheese grater **/
+/*
+  This grates some cheese
+*/
+      // Let's get GRATING
+      class cheesegrater {
+
+        static int cheeseslice;
+
+        function int grate(int cheese,int timestograte) {
+
+          var int time,amountofcheese;
+          var String cheeseString;
+          let time = 0;
+
+          while(timestograte > 0 | cheese > 0) {
+            let cheese = cheese - 1;
+            let timestograte = timestograte - 1;
+            let time = time + 1;
+            let amountofcheese = amountofcheese + cheese * 2;
+          }
+
+          do Output.printInt(time);          
+          return amountofcheese;
+        } 
+      }
+       

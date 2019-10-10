@@ -1,0 +1,13 @@
+function Main.main 1
+push constant 5
+push constant 0
+push  
+pop local 0
+push constant 2
+push constant 3
+push local 0
+push  
+push  
+pop local 0
+push constant 0
+return

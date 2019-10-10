@@ -1,0 +1,21 @@
+push constant 0
+push 
+push constant 0
+push 
+push constant 0
+push 
+push constant 1
+sub
+push 
+push constant 1
+sub
+push 
+push constant 1
+add
+push 
+push 
+push constant 2
+call Math.multiply 2
+add
+push 
+push 
